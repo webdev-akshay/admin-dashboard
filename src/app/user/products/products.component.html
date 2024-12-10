@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-6 mb-3" *ngFor="let products of productList">
+      <div class="featured-item h-100">
+         <div class="featured-item-img">
+            <a href="#">
+               <img [src]="products.image" alt="Images">
+            </a>
+         </div>
+         <div class="content">
+            <h3><a href="#">{{products.title}}</a></h3>
+            <hr>
+            <div class="content-in">
+               <h4>Rs.{{products.price}} </h4>
+               <span>({{products.rating.rate}})<i class="fa fa-star"></i></span>
+            </div>
+            <hr>
+            <div class="featured-content-list">
+               <button type="button" data-name="Oxford" data-price="1200" class="border-radius-5 btn btn-warning"> Add to cart</button>
+            </div>
+         </div>
+      </div>
+    </div>
+
+  </div>
+</div>
