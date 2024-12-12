@@ -1,0 +1,46 @@
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" >ShopEase</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" >Shop</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <div class="row">
+              <li class="col-md-6" *ngFor="let category of categoryList"><a class="dropdown-item">{{category}}</a></li>
+            </div>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" >About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" >Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav ms-3">
+          <li class="nav-item">
+            <a class="nav-link" ><i class="bi bi-cart"></i> Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" ><i class="bi bi-person"></i> Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
