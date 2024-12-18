@@ -10,7 +10,7 @@ export class ProductService {
   private apiUrl=environments.apiUrl
   constructor(private http:HttpClient) { }
 
-  getAllProducts():Observable<any>{
+  getAllProducts(selectedCategory: string):Observable<any>{
     return this.http.get(`${this.apiUrl}/products`)
   }
 }

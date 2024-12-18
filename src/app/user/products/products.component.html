@@ -1,3 +1,14 @@
+<!-- <select name="" id="" (change)="onCategoryChange($event)">
+  <option value="" *ngFor="let category of productList" [value]="category">{{category | titlecase}}</option>
+</select> -->
+<!-- <select name="" id="" (change)="onCategoryChange($event.target.value)">
+  <option *ngFor="let category of categories" [value]="category">{{ category | titlecase }}</option>
+</select> -->
+<select name="" id="" [(ngModel)]="selectedCategory" (change)="onCategoryChange()">
+  <option *ngFor="let category of categories" [value]="category">{{ category | titlecase }}</option>
+</select>
+
+
 <div class="container">
   <div class="row">
     <div class="col-lg-3 col-md-6 mb-3" *ngFor="let products of productList">
